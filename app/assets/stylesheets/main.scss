@@ -1,0 +1,151 @@
+body{
+	color: #37BFE5;
+}
+
+.left-block{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 300px;
+	background-color: #363638;
+	z-index: 999;
+}
+
+.right-block{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: calc(100% - 300px);
+	background-color: #525258;
+	z-index: 999;
+	overflow: auto;
+}
+
+.left-block-container{
+	padding: 24px 12px;
+}
+
+.right-block-container{
+	max-width: 850px;
+	width: 95%;
+	min-width: 400px;
+	margin: 0 auto;
+	padding: 48px 12px;
+}
+
+.profile-info{
+	> .avatar{
+		text-align: center;
+		> img {
+			max-width: 100px;
+			margin: 0 auto;
+		}
+	}
+
+	> .name{
+		text-align: center;
+		color: #FFF;
+	}
+
+	> .description{
+		text-align: center;
+		color: #EEE;
+	}
+
+	> .social-media-block{
+		text-align: center;
+
+		> .social-media-link{
+			color: #FFF;
+			background: #CE5656;
+			display: inline-block;
+			border-radius: 50%;
+			padding: 7px 4px 7px 7px;
+		}
+	}
+
+	> .contact-info-block{
+		padding: 16px 12px;
+    background: #EEE;
+    margin: 16px auto;
+    max-width: 260px;
+    border-radius: 1px;
+	}
+}
+
+.inline-title{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+  > .line{
+		flex: 1;
+		height: 2px;
+		background-color: black;
+    align-self: center;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    margin-bottom: 8px;
+    margin-left: 24px;
+    margin-right: 8px;
+  }
+}
+
+.language-itme-icon{
+	margin-right: 12px;
+	background-color: black;
+	color: #FFF;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+
+	> span{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		display: block;
+	}
+
+}
+
+.top-bar{
+	background-color: #37BFE5;
+
+	> .top-bar-content{
+		max-width: 850px;
+		width: 95%;
+		min-width: 400px;
+		margin: 0 auto;
+		padding: 24px 12px;
+
+		.header{
+			color: #FFF;
+		}
+
+		p{
+			color: #F4F6F7;
+		}
+	}
+}
+
+.ui.accordion .title:not(.ui){
+	color: rgba(253, 253, 253, .95);
+}
